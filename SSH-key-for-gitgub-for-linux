@@ -1,0 +1,15 @@
+Create SSH key
+ssh-keygen -t rsa -b 4096 -C "example@example.com"
+
+Save the file to ssh folder. On Linux the path is normally 
+/home/username/.ssh/ssh_file_name
+
+Ignore passphrase (by press Enter key without input any characters) if you want to create a non-passphrase ssh key
+
+Run ssh agent
+eval $(ssh-agent -s)
+
+Add the key has been just generated to ssh agent
+ssh-add "/home/username/.ssh/ssh_file_name"
+
+Add the publickey to github account (go to "Setting" then select "SSH and GPG keys")
