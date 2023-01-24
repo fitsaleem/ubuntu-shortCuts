@@ -1,0 +1,24 @@
+ssh-keygen -t ed25519 -C emailexample@gmail.com
+eval "$(ssh -agent -s)"
+~/.ssh/config    (if file not present create file)
+touch ~/.ssh/config  
+vim ~/.ssh/config  
+
+type these commands in file :
+
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+  
+<now save the file with command <press esc button then tyepe :wq>
+
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+<copy the file content and go to the github and go ssh key option and past the content in key box>
+<and save the ssh key >
+<now go to the terminal again>
+<type this command>
+
+.SSH -T git@github.com
+
+congurats you have done
