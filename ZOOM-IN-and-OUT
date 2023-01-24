@@ -1,0 +1,4 @@
+copy the given commmand for zoom in:
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out "['<Ctrl><+>']"
+
+In the previous commands, you may also replace magnifier with magnifier-zoom-in or magnifier-zoom-out to change the corresponding shortcut keys.
