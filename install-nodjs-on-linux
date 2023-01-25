@@ -1,0 +1,13 @@
+// go to browser and serch nodjs download 
+// download the zip file and extract it
+//now open nodejs folder can see the bin folder
+// now right click on the folder and click on properties
+// now copy the parent folder path
+// now go to home and type ctrl+H (it will show hide files )
+// now you can see the .bashrc file 
+// open it any editor
+// now type these lines at the last of your file 
+
+export PATH=<past your path>:$PATH
+
+example: export PATH=/home/saleem/Downloads/node-v19.5.0-linux-x64:$PATH
