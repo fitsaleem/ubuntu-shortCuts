@@ -1,0 +1,9 @@
+you can remove black screen by following these steps
+1: open the terminal 
+2: type this command:  sudo nano /etc/gdm3/custom.conf
+3: now you can see that :
+this line is commented:   WaylandEnable=false
+4: un comment this line by removing #
+now press the crtl + x 
+now type yes and enter
+5 : now reboot the pc 
