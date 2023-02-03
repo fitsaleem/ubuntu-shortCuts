@@ -5,5 +5,5 @@ you can remove black screen by following these steps
 this line is commented:   WaylandEnable=false
 4: un comment this line by removing #
 now press the crtl + x 
-now type yes and enter
+now type yes and enter:
 5 : now reboot the pc 
