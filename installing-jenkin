@@ -1,0 +1,42 @@
+requirnments:
+1 java: 
+use this command for install java
+   sudo apt install openjdk-8-jdk
+   
+2 git:
+use this command for install git
+   sudo apt install git
+   
+3 jenkin:
+before instaalling jenkin you need to copy past these given commands
+  
+  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+  
+  sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+  
+  sudo apt update
+  
+  sudo apt install jenkins
+  
+now that Jenkins is installed, start it by using systemctl:
+
+ sudo systemctl start jenkins.service
+
+ sudo systemctl status jenkins
+
+now Opening the Firewall:
+
+ sudo ufw allow 8080
+ 
+Note: If the firewall is inactive, the following commands will allow OpenSSH and enable the firewall:
+
+  sudo ufw allow OpenSSH
+  sudo ufw enable
+  
+sudo ufw status
+
+done.....
+
+ 
+  
+   
