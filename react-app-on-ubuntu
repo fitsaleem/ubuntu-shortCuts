@@ -1,0 +1,13 @@
+creating react app in ubuntu:
+
+run the following commands:
+
+npm install -g create-react-app
+
+sudo apt-get update
+sudo apt-get upgrade
+
+npx create-react-app my-app
+
+
+
