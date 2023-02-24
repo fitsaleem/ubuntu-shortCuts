@@ -1,3 +1,16 @@
+step: 01
+
+apt install nodejs
+apt install npm
+npm install -g n
+n latest
+/bin/bash
+node -v
+
+step# 02(if not resloved with step one)
+
+
+
 Upgrading nodejs on Ubuntu: How to fix broken pipe error?
 
 sudo apt remove nodejs  
@@ -6,3 +19,4 @@ sudo apt remove nodejs-doc
 sudo dpkg --remove --force-remove-reinstreq libnode-dev
 sudo dpkg --remove --force-remove-reinstreq libnode72:amd64
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs
+
