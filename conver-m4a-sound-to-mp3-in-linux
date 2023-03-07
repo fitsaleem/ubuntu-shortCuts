@@ -1,0 +1,7 @@
+How to convert a m4a sound file to mp3?
+
+simply just copy this command and past to your terminal
+
+ ffmpeg -v 5 -y -i input.m4a -acodec libmp3lame -ac 2 -ab 192k output.mp3
+ 
+ note: don,nt forget to change the input.m4a with your sound name 
