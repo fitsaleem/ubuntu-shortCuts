@@ -28,3 +28,30 @@ Update npm :
 
 sudo npm install npm --global
 
+Error resolve:
+
+nvm is not compatible with the npm config "prefix" option: currently set to ""
+Run `npm config delete prefix` or `nvm use --delete-prefix v12.22.12 --silent` to unset it.
+
+how to fix this issue:
+
+This error message indicates that there is a conflict between the "prefix" configuration option in npm and nvm, which is a version manager for Node.js. To resolve this issue, you have two options:
+
+Option 1: Delete the "prefix" configuration option in npm
+
+You can delete the "prefix" configuration option in npm by running the following command in your terminal:
+
+npm config delete prefix
+
+Option 2: Use nvm to unset the "prefix" option
+
+If you want to continue using the "prefix" configuration option in npm, you can use nvm to unset the option. To do this, run the following command in your terminal:
+
+nvm use --delete-prefix v12.22.12 --silent
+
+
+If you want to use Node.js version 18 and unset the "prefix" configuration option in npm, you can use the following commands:
+
+nvm install 18
+nvm use 18
+npm config delete prefix
